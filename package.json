@@ -1,0 +1,35 @@
+{
+  "name": "avm-nft-workflow",
+  "version": "0.1.1",
+  "repository": "git@github.com:cgcardona/avm-nft-workflow.git",
+  "author": "Gabriel Cardona <gabriel@avalabs.org>",
+  "license": "MIT",
+  "scripts": {
+    "calculateValidatorAndDelegatorCounts": "ts-node scripts/calculateValidatorAndDelegatorCounts.ts",
+    "createAssetTx-NFT": "ts-node scripts/createAssetTx-NFT.ts",
+    "operationTx-mint-NFT": "ts-node scripts/operationTx-mint-NFT.ts"
+  },
+  "keywords": [
+    "Avalanche",
+    "avm",
+    "nft"
+  ],
+  "bugs": {
+    "url": "https://github.com/cgcardona/avm-nft-workflow/issues"
+  },
+  "homepage": "https://github.com/cgcardona/avm-nft-workflow#readme",
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "dependencies": {
+    "avalanche": "^3.8.5"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": false,
+    "jsxBracketSameLine": false,
+    "trailingComma": "none"
+  }
+}
