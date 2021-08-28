@@ -41,6 +41,20 @@ Success! TXID: 2s5P6g9ErtTrkhyz8xmWnmSYtbUjzZMdBTWrheSXLnxkRakxNP
 
 ### Operation Tx - Mint NFT
 
+Replace the `jsonPayload` with your NFT payload before minting NFTs.
+
+```ts
+const jsonPayload: Payload = {
+  avalanche: {
+    version: 1,
+    type: "generic",
+    title: "Ascension or Descension",
+    img: "https://i.imgur.com/WNvPiDl.jpg",
+    desc: "Climbing higher or spiraling downward?"
+  }
+}
+```
+
 ```zsh
 yarn operationTx-mint-NFT
 yarn run v1.22.10

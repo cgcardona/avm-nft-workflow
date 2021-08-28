@@ -45,6 +45,17 @@ const getUTXOIDs = (
   return result
 }
 
+interface AvalanchePayload {
+  version: number
+  type: string
+  title: string
+  img: string
+  desc: string
+}
+interface Payload {
+  avalanche: AvalanchePayload
+}
+
 interface EndIndex {
   address: string
   utxo: string
@@ -92,7 +103,8 @@ const fee: BN = xchain.getDefaultTxFee()
 const threshold: number = 1
 const locktime: BN = new BN(0)
 const memo: Buffer = Buffer.from("AVM manual OperationTx to mint an NFT")
-const jsonPayload = {
+// TODO - Replace `jsonPayload` w/ your NFT payload
+const jsonPayload: Payload = {
   avalanche: {
     version: 1,
     type: "generic",
