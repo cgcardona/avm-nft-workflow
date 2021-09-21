@@ -7,7 +7,8 @@
   "scripts": {
     "calculateValidatorAndDelegatorCounts": "ts-node scripts/calculateValidatorAndDelegatorCounts.ts",
     "createAssetTx-NFT": "ts-node scripts/createAssetTx-NFT.ts",
-    "operationTx-mint-NFT": "ts-node scripts/operationTx-mint-NFT.ts"
+    "operationTx-mint-NFT": "ts-node scripts/operationTx-mint-NFT.ts",
+    "buildCreateAssetTx": "ts-node scripts/buildCreateAssetTx"
   },
   "keywords": [
     "Avalanche",
@@ -22,7 +23,7 @@
     "node": ">=14.17.0"
   },
   "dependencies": {
-    "avalanche": "^3.8.5"
+    "avalanche": "^3.8.6"
   },
   "prettier": {
     "tabWidth": 2,

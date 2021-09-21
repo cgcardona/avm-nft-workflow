@@ -12,9 +12,13 @@ cd avm-nft-workflow/
 yarn install
 ```
 
-## Running Scripts
+## Prerequisites
+
+Follow [this](https://docs.avax.network/build/tutorials/platform/create-a-local-test-network#with-avash) to fire up a 5 node staking network, by default all codes run on local network. However, you can change code to point to Fuji or Mainnet.
 
 We're using [ts-node](https://github.com/TypeStrong/ts-node) run scripts while bypassing the ts -> js transpilation step.
+
+## Running Scripts
 
 ### Calculate Validator and Delegator Counts
 
@@ -32,12 +36,24 @@ Total Validator and Whitelist count: 5
 ### Create Asset Tx - NFT
 
 ```zsh
-yarn createAssetTx-nft
+yarn createAssetTx-NFT
 yarn run v1.22.10
-$ ts-node scripts/createAssetTx-nft.ts
+$ ts-node scripts/createAssetTx-NFT.ts
 Success! TXID: 2s5P6g9ErtTrkhyz8xmWnmSYtbUjzZMdBTWrheSXLnxkRakxNP
 ✨  Done in 2.26s.
 ```
+
+### Build Create Asset Tx
+```zsh
+yarn buildCreateAssetTx
+yarn run v1.22.10
+$ ts-node scripts/buildCreateAssetTx
+Success! TXID: 2Ld8VnnaQFPb3jFkX73PDV85jjW4c9XTGENVUaxhvf3pxCaCHm
+status: Processing
+status: Accepted
+✨  Done in 4.10s.
+```
+
 
 ### Operation Tx - Mint NFT
 
