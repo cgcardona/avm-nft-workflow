@@ -23,7 +23,8 @@
     "node": ">=14.17.0"
   },
   "dependencies": {
-    "avalanche": "^3.8.6"
+    "avalanche": "^3.9.0",
+    "isomorphic-dompurify": "^0.15.0"
   },
   "prettier": {
     "tabWidth": 2,
